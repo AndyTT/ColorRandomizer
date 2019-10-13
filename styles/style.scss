@@ -1,0 +1,23 @@
+@import 'mixins';
+$barlowFont: Barlow, sans-serif;
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    @include flexCenter(column);
+    height: 100%;
+
+    #hex {
+        font-family: $barlowFont;
+        font-size: 80px;
+        text-shadow: 0 0 5px whitesmoke;
+    }
+
+    #btn {
+        cursor: pointer;
+    }
+}
