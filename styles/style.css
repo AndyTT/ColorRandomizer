@@ -33,7 +33,10 @@ main #btn {
   background-color: transparent;
   border-radius: 10px;
   outline: 0;
+  -webkit-box-shadow: 0 0 4px;
+          box-shadow: 0 0 4px;
   cursor: pointer;
+  text-shadow: 0 0 3px whitesmoke;
   margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
