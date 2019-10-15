@@ -5,3 +5,12 @@
     align-items: center;
     flex-direction: $direction;
 }
+
+// Button design mixin
+@mixin btnDesign {
+
+    padding: 10px 30px;
+    border-radius: 10px;
+    outline: 0;
+    
+}

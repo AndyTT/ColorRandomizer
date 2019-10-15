@@ -15,9 +15,12 @@ main{
         font-family: $barlowFont;
         font-size: 80px;
         text-shadow: 0 0 5px whitesmoke;
+        margin-bottom: 10px;
     }
 
     #btn {
+        @include btnDesign;
         cursor: pointer;
+        margin-top: 0;
     }
 }

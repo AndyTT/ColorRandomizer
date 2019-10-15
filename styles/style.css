@@ -25,9 +25,15 @@ main #hex {
   font-family: Barlow, sans-serif;
   font-size: 80px;
   text-shadow: 0 0 5px whitesmoke;
+  margin-bottom: 10px;
 }
 
 main #btn {
+  padding: 10px 30px;
+  background-color: transparent;
+  border-radius: 10px;
+  outline: 0;
   cursor: pointer;
+  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */

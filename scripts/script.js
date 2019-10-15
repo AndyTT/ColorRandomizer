@@ -11,6 +11,9 @@ main.style.backgroundColor = color;
 
 //set hex content to random color as it's generated
 hex.innerHTML = color;
+
+//set button color
+// button.style.backgroundColor = getButtonColor();
 }
 
 
@@ -25,3 +28,21 @@ function getRandomHex() {
 
     return hex;
 }
+
+/*
+Function to generate button
+color based on random hex color
+*/
+// function getButtonColor() {
+
+//     let color = getRandomHex();
+//     let btnColor = "#";
+//     let j = 1;
+
+//     for (let i = 1; i <= 3; i++){
+//         btnColor += color[j] + "F";
+//         j += 2;
+//     }
+
+//     return btnColor;
+// }
