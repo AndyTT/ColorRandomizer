@@ -37,14 +37,13 @@ html, body {
 }
 
 main{
-    @include flexCenter(column);
+    @include flexCenter(row);
     height: 100%;
 
     #hex {
         font-family: $barlowFont;
         font-size: 80px;
         text-shadow: 0 0 5px whitesmoke;
-        margin-bottom: 10px;
     }
 }
 
