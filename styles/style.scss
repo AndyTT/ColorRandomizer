@@ -1,10 +1,39 @@
 @import 'mixins';
 $barlowFont: Barlow, sans-serif;
+$borderColor: #CFD8D7;
 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: $barlowFont;
+    border-bottom-style: solid;
+    border-bottom-color: $borderColor;
+    border-bottom-width: 3px;
+
+    div {
+        @include flexCenter(row);
+    }
+
+    #btn {
+        @include btnDesign;
+        cursor: pointer;
+        margin-top: 0;
+        font-weight: bold;
+    }
+
 }
 
 main{
@@ -17,11 +46,26 @@ main{
         text-shadow: 0 0 5px whitesmoke;
         margin-bottom: 10px;
     }
+}
 
-    #btn {
-        @include btnDesign;
-        cursor: pointer;
-        text-shadow: 0 0 3px whitesmoke;
-        margin-top: 0;
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    border-top-style: solid;
+    border-top-color: $borderColor;
+    border-top-width: 3px;
+    font-size: 30px;
+
+    div {
+        @include flexCenter(row);
+        padding: 10px 30px;
+
+        a:link, a:visited, a:active {
+            color: black;
+        }
+
+        a:hover {
+            color: #FFBCB5;
+        }
     }
 }

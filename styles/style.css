@@ -4,6 +4,56 @@ html, body {
   padding: 0;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  font-family: Barlow, sans-serif;
+  border-bottom-style: solid;
+  border-bottom-color: #CFD8D7;
+  border-bottom-width: 3px;
+}
+
+.header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header #btn {
+  padding: 5px 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  outline: 0;
+  -webkit-box-shadow: 0 0 4px;
+          box-shadow: 0 0 4px;
+  cursor: pointer;
+  margin-top: 0;
+  font-weight: bold;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,15 +78,42 @@ main #hex {
   margin-bottom: 10px;
 }
 
-main #btn {
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  border-top-style: solid;
+  border-top-color: #CFD8D7;
+  border-top-width: 3px;
+  font-size: 30px;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 10px 30px;
-  background-color: transparent;
-  border-radius: 10px;
-  outline: 0;
-  -webkit-box-shadow: 0 0 4px;
-          box-shadow: 0 0 4px;
-  cursor: pointer;
-  text-shadow: 0 0 3px whitesmoke;
-  margin-top: 0;
+}
+
+footer div a:link, footer div a:visited, footer div a:active {
+  color: black;
+}
+
+footer div a:hover {
+  color: #FFBCB5;
 }
 /*# sourceMappingURL=style.css.map */
