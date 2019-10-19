@@ -48,8 +48,7 @@ main{
 }
 
 footer {
-    display: flex;
-    flex-direction: row-reverse;
+    @include flexCenter(row);
     border-top-style: solid;
     border-top-color: $borderColor;
     border-top-width: 3px;
