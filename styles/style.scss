@@ -1,6 +1,7 @@
 @import 'mixins';
 $barlowFont: Barlow, sans-serif;
-$borderColor: #CFD8D7;
+$fontColor: #403F4C;
+$borderColor: #62616C;
 
 html, body {
     height: 100%;
@@ -19,6 +20,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: $barlowFont;
+    color: $fontColor;
     border-bottom-style: solid;
     border-bottom-color: $borderColor;
     border-bottom-width: 3px;
@@ -59,7 +61,7 @@ footer {
         padding: 10px 30px;
 
         a:link, a:visited, a:active {
-            color: black;
+            color: $fontColor;
         }
 
         a:hover {

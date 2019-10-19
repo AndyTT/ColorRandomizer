@@ -21,8 +21,9 @@ html, body {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   font-family: Barlow, sans-serif;
+  color: #403F4C;
   border-bottom-style: solid;
-  border-bottom-color: #CFD8D7;
+  border-bottom-color: #62616C;
   border-bottom-width: 3px;
 }
 
@@ -92,7 +93,7 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   border-top-style: solid;
-  border-top-color: #CFD8D7;
+  border-top-color: #62616C;
   border-top-width: 3px;
   font-size: 30px;
 }
@@ -115,7 +116,7 @@ footer div {
 }
 
 footer div a:link, footer div a:visited, footer div a:active {
-  color: black;
+  color: #403F4C;
 }
 
 footer div a:hover {
